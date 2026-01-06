@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+
+<style>
+
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.5; /* 正常行高 */
+    }
+
+    /* 页面背景：蓝绿色+高透明度 */
+    body {
+        background-color: rgba(102, 187, 181, 0.15); /* 高透明蓝绿色 */
+        padding: 20px;
+    }
+
+    /* 标题样式：加粗宋体 + 浅棕色系 + 居中 */
+    h1, h3 {
+        font-family: "SimSun", serif; /* 宋体 */
+        font-weight: bold;
+        color: #8B6914; /* 浅棕色 */
+        text-align: center;
+        margin: 15px 0; /* 标题上下间距 */
+    }
+
+    h1 {
+        font-size: 28px; /* 主标题字号 */
+    }
+
+    h3 {
+        font-size: 20px; /* 副标题字号 */
+    }
+
+    /* 段落样式：楷体 + 浅蓝色系 + 合适字号 + 段落间距 */
+    p {
+        font-family: "KaiTi", serif; /* 楷体 */
+        font-size: 20px; /* 正文合适字号 */
+        color: #4682B4; /* 浅蓝色 */
+        margin: 12px 0; /*段落之间间隔 */
+        text-align: justify;
+        padding: 0 10px;
+    }
+
+    /* 强调文本样式润色 */
+    strong {
+        color: #8B4513; /* 深一点的浅棕色，突出强调 */
+    }
+
+    em {
+        color: #2F4F4F; /* 暗蓝绿色，呼应背景 */
+        font-style: italic;
+    }
+
+    /* 列表样式：对齐 + 间距 + 字体匹配 */
+    ul, ol {
+        font-family: "KaiTi", serif; /* 楷体匹配正文 */
+        font-size: 16px;
+        color: #4682B4; /* 浅蓝色 */
+        margin: 10px 0 10px 40px; /* 列表间距 + 缩进 */
+    }
+
+    li {
+        margin: 8px 0; /* 列表项间距 */
+    }
+
+    /* 链接样式：润色 + 交互效果 */
+    a {
+        font-family: "KaiTi", serif;
+        font-size: 16px;
+        color: #5F9EA0; /* 蓝绿色系 */
+        text-decoration: none;
+        display: block; /* 居中需要 */
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    a:hover {
+        color: #8B6914; /* 浅棕色 hover 效果 */
+        text-decoration: underline;
+    }
+
+    /* 图片样式：居中 + 间距 */
+    img {
+        display: block;
+        margin: 20px auto; /* 图片居中 + 上下间距 */
+        border-radius: 8px; /* 轻微圆角润色 */
+    }
+
+    /* 表格样式：居中 + 间距 + 配色 */
+    table {
+        width: 90%;
+        margin: 20px auto; /* 表格居中 */
+        border-collapse: collapse; /* 合并边框 */
+        font-family: "KaiTi", serif;
+        color: #4682B4; /* 浅蓝色 */
+    }
+
+    th, td {
+        padding: 14px;
+        text-align: center; /* 表格内容居中 */
+        border: 2px solid #B0C4DE; /* 浅蓝边框 */
+    }
+
+    th {
+        background-color: rgba(176, 196, 222, 0.3); /* 浅蓝透明表头 */
+        font-weight: bold;
+        color: #8B6914; /* 浅棕色表头文字 */
+    }
+
+    /* 表单样式：居中 + 间距 + 配色 */
+    form {
+        width: 80%;
+        margin: 20px auto; /* 表单居中 */
+        padding: 16px;
+        border: 1px solid #B0C4DE; /* 浅蓝边框 */
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.8); /* 白色透明背景 */
+    }
+
+    form p {
+        margin: 10px 0;
+    }
+
+    input[type="text"], textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #B0C4DE;
+        border-radius: 4px;
+        font-family: "KaiTi", serif;
+        font-size: 15px;
+        color: #4682B4;
+    }
+
+    button {
+        padding: 8px 20px;
+        background-color: #66BBB5; /* 蓝绿色按钮 */
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-family: "SimSun", serif; /* 按钮宋体加粗 */
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #559994; /* 按钮hover深色 */
+    }
+
+    /* 水平线样式润色 */
+    hr {
+        border: none;
+        height: 1px;
+        background-color: rgba(70, 130, 180, 0.3); /* 浅蓝透明水平线 */
+        margin: 20px 0;
+    }
+
+
+
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+<h1>让我来介绍一下我的家乡柳州!</h1>
+<hr>
+<h3><em>你是否为了嗦一口粉，踏入这座城？</em></h3>
+<br >
+<p>提到柳州，大多数人的第一反应是那碗让人欲罢不能的<strong>螺蛳粉</strong>独特的风味让它成为美食界的 “顶流”，
+  也让这座西南小城成了名副其实的美食打卡地。但柳州的底色，是藏不住的山水灵秀。作为<strong>喀斯特地貌</strong>
+  的集中展示区，这里的山不高却奇，洞不深却幽，柳江蜿蜒穿城，江水清澈见底，两岸的喀斯特 峰林倒映水中，形成了
+  “百里柳江，百里画廊” 的绝美景观。美食与山水在此相遇，让柳州既有烟火气，又有自然韵。 而另一个有代表性的则是<strong>柳州的桥</strong>，
+  它们是柳江之上的灵动音符。柳江大桥作为全国首座 T 型钢构桥，以独特的身姿横跨江面，承载着城市的记忆与荣光凤凰岭大桥则
+  带着侗族建筑的古朴韵味，成为世界跨径最大的跨江风雨桥，将民族风情与现代工艺完美融合。还有造型如海鸥展翅的广雅大桥，
+  像戒指般浪漫的白沙大桥，每一座都独具特色，为百里柳江增添了别样景致。 而柳州的春，是<strong>紫荆花</strong>的盛宴。三月里，粉紫的花朵
+  缀满枝头，街道、江岸、桥头，处处花团锦簇。阳光洒下，花瓣灵动如蝶，微风拂过，整座城市都浸在温柔的花海里。</p>
+<img src="https://qcloud.dpfile.com/pc/iXE3sjwj20Xn7Jqc6NlNDLcL9YOJrF47k9hprnlHVm1uzSP7hemM7GXL13uADlj9.jpg" alt="luoshifen.jpg" width="200" height="200" >
+<img src="https://img1.baidu.com/it/u=2058785170,4185283914&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500" alt="daqiao.jpg" width="300" height="200"   >
+<img src="https://img0.baidu.com/it/u=842329619,68075869&fm=253&fmt=auto&app=120&f=JPEG?w=1139&h=640" alt="zijinghua.jpg" width="300" height="200" >
+<hr>
+
+<p>而这座以山水著名的城市，古往今来也有很多文人墨客经此留下了优美的诗句，例如：
+  柳宗元的《登柳州城楼寄漳汀封连四州》里<em>惊风乱飐芙蓉水，密雨斜侵薜荔墙。岭树重遮千里目，江流曲似九回肠。</em>，以急风密雨写近景，用层叠岭树与蜿蜒柳江
+  绘远景交融感情;郭沫若的《途次柳州》里<em>邕江惜别柳江来，拔地奇峰画卷开。</em>以 “拔地奇峰” 概括柳州喀斯特峰林的突兀之美，契合 “百里柳江，百里画廊” 的景观特点。</p>
+<br>
+<p> 除了螺蛳粉与喀斯特山水，柳州的少数民族风情同样令人着迷。这里生活着壮、侗、苗、瑶等多个少数民族，每个民族都有自己独特的文化符号与传统习俗。壮族的山歌、
+  侗族的建筑、苗族的银饰、瑶族的舞蹈，构成了柳州鲜活的民族文化图景。每逢民族节庆，身着盛装的同胞们载歌载舞，歌声穿透山水，舞步踏响大地，让远道而来的游客
+  沉浸式感受少数民族的热情与豪迈，也让柳州的文旅名片更加立体丰富。这些鲜活的民族文化，与柳州的自然山水、特色美食相互交融，共同构成了这座城市独有的气质。
+
+  <img src="https://img01.yzcdn.cn/upload_files/2024/01/04/FhsTTDN6EE19ynJ4tf9yFyjNpvWF.jpg" alt="shaoshuminzu.jpg" width="300" height="200">
+</p>
+<ul>
+  其中包含最广泛的少数民族有：
+  <li>壮族</li>
+  <li>苗族</li>
+  <li>白族</li>
+  <li>瑶族</li>
+</ul>
+
+<ol>
+  本地最受欢迎的自然景点Top3：
+  <li>三江风雨桥</li>
+  <li>都乐岩</li>
+  <li>龙潭公园</li>
+  <img src="https://miaobi-lite.bj.bcebos.com/miaobi/5mao/b%27LV8xNzMwNzcyMTc2LjYxMjcxMg%3D%3D%27/0.png?authorization=bce-auth-v1%2FALTAKmda7zOvhZVbRzBLewvCMU%2F2024-11-05T02%3A02%3A58Z%2F-1%2F%2Fdd09337e4393e941aa338307db0307df39c3a6a42f693d0a5d3178b8ed8ca404" alt="fengyuqiao.jpg" width="300" height="200">
+  <img src="https://miaobi-lite.bj.bcebos.com/miaobi/5mao/b%275p%2Bz5bee6YO95LmQ5bKp6aOO5pmv5Yy6XzE3MzAwNzcxOTUuNjc1MjgzMg%3D%3D%27/0.png" alt="duleyan.png" width="200" height="300">
+  <img src="https://n.sinaimg.cn/sinakd10112/250/w1080h770/20201017/7ce8-kaqzmiw1234802.jpg" alt="风雨桥.jpg" width="200" height="200">
+</ol>
+<a href="https://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&ie=utf8&sa=vs_ala_img&fr=ala&ala=1&alatpl=normal&pos=3&dyTabStr=MCwzLDEsMiwxMyw3LDYsNSwxMiw5&word=%E6%9F%B3%E5%B7%9E%E9%A3%8E%E6%99%AF%E5%9B%BE&lid=ead14ab703123dc4&topic=%E6%9F%B3%E5%B7%9E%E9%A3%8E%E6%99%AF%E5%9B%BE">点击访问更多柳州秀丽风景</a>
+<hr>
+<table border="2">
+
+ <p> 柳州的城区，是<strong>人文与建筑</strong>的诗意交融。柳州的核心河流<strong>柳江</strong>宛如一条碧绿的绸带，穿城而过，将两岸的城区串联成一幅流动的画卷。
+  高校的书香浸润着街巷，莘莘学子的身影为这座工业城市注入了青春的活力与蓬勃的朝气。而横跨柳江的一座座大桥，则如一道道彩虹，
+  连接起城市的过去与未来。它们或古朴典雅，或现代大气，或独具民族风情，不仅是交通的枢纽，更是柳州人心中的精神地标。</p>
+
+
+
+  <br>
+  <tr>
+    <th>      </th>
+    <th> 人口数</th>
+    <th> 高校  </th>
+    <th>代表大桥</th>
+
+  <tr>
+    <td>柳北区</td>
+    <td>48万</td>
+    <td>广西科技职业学院</td>
+    <td>白沙大桥</td>
+</tr>
+  <tr>
+    <td>柳东区</td>
+    <td>28万</td>
+    <td>柳州市铁一中学</td>
+    <td>凤凰岭大桥</td>
+  </tr>
+  <tr>
+    <td>柳南区</td>
+    <td>61万</td>
+    <td>柳州市高级中学</td>
+    <td>红光大桥</td>
+  </tr>
+  <tr>
+    <td>城中区</td>
+    <td>24万</td>
+    <td>广西科技大学</td>
+    <td>柳江大桥</td>
+    </tr>
+
+</table>
+
+<form>
+  <p>收集你对柳州的印象：
+    <br>
+    <label>你的邮箱：</label><br>
+    <input type="text" name="email">
+  </p>
+  <p>
+    <label>你最爱的美食/风景</label><br>
+    <textarea name="message" ></textarea>
+  </p>
+  <p>
+    <label>留言内容</label><br>
+    <textarea name="message" rows="4"></textarea>
+  </p>
+  <p>
+    <button type="submit">提交</button>
+  </p>
+</form>
+
+
+
+
+
+</body>
+</html>
